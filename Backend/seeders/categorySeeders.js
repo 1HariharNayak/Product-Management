@@ -8,7 +8,7 @@ const seedCategories = async () => {
     { name: 'Home & Garden' },
     { name: 'Sports' },
   ];
-  await Category.insertMany(categories, { ordered: false }).catch(() => {}); // Ignore duplicates
+  await Category.insertMany(categories, { ordered: false }).catch(() => {});
 };
 
 module.exports = seedCategories;
